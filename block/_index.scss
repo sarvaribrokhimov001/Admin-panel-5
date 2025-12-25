@@ -1,0 +1,54 @@
+.index {
+  font-family: 'Poppins';
+
+  &__form {
+    background: #ffffff;
+    padding: 30px;
+    width: 330px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__input {
+    padding: 14px 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    color: red;
+  }
+
+  ::placeholder {
+    color: grey;
+  }
+
+  &__btn {
+      padding: 14px;
+      background: #000;
+      color: red;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+  }
+
+  &__btn:hover {
+      background: #0c28c7;
+      color: white;
+      transition: all 1s ease;
+  }
+
+  &__btn:active {
+      background-color: #000;
+      color: red;
+  }
+
+  &__body {
+    font-family: 'Poppins';
+    background: linear-gradient(150deg, #000000, rgb(15, 15, 15));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

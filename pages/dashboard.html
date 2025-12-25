@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard HTML 4 (3rd page) </title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="../css/normolize.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">  
+</head>
+<body>
+    
+    <header class="dashboard">
+        <div class="dashboard__container">
+            <div class="dashboard__panel">
+              <div class="dashboard__icon__and__title">
+                <i class="ri-account-circle-2-fill dashboard__icon"></i>
+                <h3 class="dashboard__title"> Admin Panel </h3>
+              </div> <!-- dashboard__icon__and__title -->
+
+              <div class="dashboard__image__and__texts">
+                <img class="dashboard__image" src="../images/ibrokhimov.jpg" alt="ibrokhimov_img">
+                <div class="dashboard__texts">
+                    <strong class="dashboard__user"> Sarvarbek Ibrokhimov </strong>
+                    <p class="dashboard__user__description"> Admin <span> (Online) </span> </p>
+                </div> <!-- dashboard__texts -->
+              </div> <!-- dashboard__image__and__texts -->
+
+              <div class="dashboard__sections">
+                <div class="dashboard__section">
+                  <i class="ri-home-4-line dashboard__section__icon"></i>
+                  <p class="dashboard__section__text"> Home </p>
+                </div> <!-- dashboard__section -->
+
+              <div class="dashboard__section">
+                <i class="ri-code-s-slash-line dashboard__section__icon"></i>
+                <p class="dashboard__section__text"> Code </p>
+              </div> <!-- dashboard__section -->
+
+              <div class="dashboard__section">
+                <i class="ri-play-fill dashboard__section__icon"></i>
+                <p class="dashboard__section__text"> Media </p>
+              </div> <!-- dashboard__section -->
+
+              <div class="dashboard__section">
+                <i class="ri-news-line dashboard__section__icon"></i>
+                <p class="dashboard__section__text"> News </p>
+              </div> <!-- dashboard__section -->
+
+              <div class="dashboard__section">
+                <i class="ri-todo-line dashboard__section__icon"></i>
+                <p class="dashboard__section__text"> Todo list </p>
+              </div> <!-- dashboard__section -->
+
+              <div class="dashboard__section">
+                <i class="ri-user-add-line dashboard__section__icon"></i>
+                <p class="dashboard__section__text"> Add user </p>
+              </div> <!-- dashboard__section -->
+
+              <div class="dashboard__exits">
+                <button class="dashboard__logout"> <i class="ri-logout-box-line"></i> Log out </button>
+                <button class="dashboard__signout"> <i class="ri-logout-box-line"></i> Sign out </button>
+              </div> <!-- dashboard__exits -->
+            </div> <!-- dashboard__sections -->
+          </div> <!-- dashboard__panel -->
+
+          <div class="modal__window hidden">
+            <form class="addForm">
+              <div class="inputs">
+                <input required class="input" type="text" placeholder="title" name="title">
+                <input required class="input" type="number" placeholder="price" name="price">
+                <input required class="input" type="text" placeholder="description" name="description">
+                <input required class="input" type="text" placeholder="category" name="category">
+                <input required class="input" type="url" placeholder="image" name="image">
+              </div> <!-- inputs -->
+
+              <div class="buttons">
+                <button class="cancel__btn"> Cancel </button>
+                <button class="submit__btn"> Submit </button>
+              </div> <!-- buttons -->
+            </form>
+          </div> <!-- modal__window -->
+
+          <div class="modal__window__edit hidden">
+            <form class="editForm">
+              <div class="inputs__2 inputs">
+                <input required class="edit__input input" type="text" placeholder="title" name="title">
+                <input required class="edit__input input" type="number" placeholder="price" name="price">
+                <input required class="edit__input input" type="text" placeholder="description" name="description">
+                <input required class="edit__input input" type="text" placeholder="category" name="category">
+                <input required class="edit__input input" type="url" placeholder="image" name="image">
+              </div> <!-- inputs__2 -->
+
+              <div class="buttons__2 buttons">
+                <button class="cancel__btn__2 cancel__btn"> Cancel </button>
+                <button class="submit__btn__2 submit__btn"> Submit </button>
+              </div> <!-- buttons -->
+            </form>
+          </div> <!-- modal__window__edit -->
+
+           
+
+       <div class="dashboard__navbar__and__content">
+          <nav class="dashboard__navbar">
+            <input class="dashboard__search" type="search" placeholder="search...">
+            <div class="dashboard__navbar__icons">
+               <i class="ri-menu-line dashboard__menu__icon"></i>
+               <div class="dashboard__menu__elements"></div>
+
+                <button class="add__Btn"> Add + </button>
+
+               <i class="ri-github-fill dashboard__github__icon"></i> 
+            </div> <!-- dashboard__navbar__icons -->
+          </nav> <!-- dashboard__navbar -->
+
+          <div class="dashboard__content">
+           
+            <table>
+              <thead>
+                <tr>
+                  <th> T/R </th>
+                  <th> Title </th>
+                  <th> Category </th>
+                  <th> Description </th>
+                  <th> Price </th>
+                  <th> Image </th>
+                  <th> Action </th>
+                </tr>
+              </thead>
+              <tbody class="dashboard__table__body"></tbody>
+            </table>
+
+          </div> <!-- dashboard__content -->
+        </div> <!-- dashboard__navbar__and__content -->
+      </div> <!-- dashboard__navbar__icons -->
+    </nav> <!-- dashboard__navbar -->
+  </div> <!-- dashboard__container -->
+</header>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../utils/dashboard.js"></script>
+</body>
+</html>
