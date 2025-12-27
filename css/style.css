@@ -1,3 +1,20 @@
+* {
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
 .index {
   font-family: "Poppins";
 }
@@ -341,6 +358,362 @@
   margin: 5px;
 }
 .dashboard__delete__btn:hover {
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+  transition: all 0.9s ease;
+}
+
+body {
+  background-color: rgb(27, 26, 26);
+}
+
+table {
+  border-collapse: collapse;
+  color: red;
+  border: 5px solid red;
+}
+
+th {
+  text-align: center;
+  background-color: black;
+  color: cyan;
+  font-weight: 400;
+  font-size: 19px;
+  border: 5px solid red;
+  padding: 30px;
+}
+
+td {
+  border: 5px solid red;
+  font-weight: 400;
+  padding: 20px;
+  text-align: start;
+  background-color: black;
+  color: cyan;
+}
+
+td:nth-child(1) {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  color: cyan;
+}
+
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.add__Btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 13px;
+  margin-top: 30px;
+  background-color: black;
+  color: green;
+  border: 2px solid green;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
+}
+
+.modal__window {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(37, 98, 91);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px 0px 25px;
+}
+
+.input {
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+  color: red;
+  border-radius: 15px;
+  border: 3px solid red;
+}
+
+.input:focus {
+  border: 5px solid red;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cancel__btn {
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  border: 3px solid white;
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+.cancel__btn:hover {
+  background-color: black;
+  color: red;
+  border: 3px solid red;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+.submit__btn {
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  border: 3px solid white;
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
+}
+
+.submit__btn:hover {
+  background-color: black;
+  color: green;
+  border: 3px solid green;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.6);
+}
+
+.modal__window__edit {
+  width: 300px;
+  height: 400px;
+  background-color: yellow;
+}
+
+.main__cancel__btn {
+  width: 130px;
+  height: 35px;
+  margin: 18px auto;
+}
+
+.carts {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.carts__container {
+  display: flex;
+}
+.carts__panel {
+  width: 380px;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.carts__icon__and__title {
+  display: flex;
+  gap: 15px;
+}
+.carts__icon {
+  font-size: 45px;
+  margin-top: 20px;
+}
+.carts__title {
+  font-size: 28px;
+}
+.carts__image__and__texts {
+  display: flex;
+  gap: 15px;
+}
+.carts__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.carts__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.carts__user {
+  font-size: 20px;
+}
+.carts__user__description {
+  font-size: 16px;
+}
+.carts__user__description span {
+  font-size: 13px;
+  color: rgb(84, 182, 234);
+}
+.carts__sections {
+  display: flex;
+  flex-direction: column;
+}
+.carts__section {
+  display: flex;
+  gap: 10px;
+  transition: all 0.6s ease;
+}
+.carts__section:hover {
+  color: red;
+  background: rgb(63, 44, 44);
+}
+.carts__section__icon {
+  font-size: 30px;
+  margin-top: 13px;
+}
+.carts__section__text {
+  font-size: 22px;
+}
+.carts__exits {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+.carts__logout {
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.carts__logout:hover {
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+  transition: all 0.7s ease;
+}
+.carts__signout {
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+.carts__signout:hover {
+  background-color: rgb(29, 5, 5);
+  color: red;
+  border: 2px solid red;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+.carts__navbar {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.carts__search {
+  width: 400px;
+  height: 32px;
+  border-radius: 10px;
+  margin: 30px;
+}
+.carts__search:focus {
+  background-color: red;
+  color: white;
+  padding-left: 10px;
+}
+.carts__search::-moz-placeholder {
+  padding-left: 20px;
+  color: red;
+}
+.carts__search::placeholder {
+  padding-left: 20px;
+  color: red;
+}
+.carts__navbar__icons {
+  display: flex;
+  margin-left: 50px;
+  gap: 50px;
+}
+.carts__menu__icon {
+  font-size: 30px;
+  margin-top: 28px;
+}
+.carts__github__icon {
+  font-size: 40px;
+  margin-top: 27px;
+}
+.carts__menu__elements {
+  width: 200px;
+  height: 300px;
+  color: white;
+}
+.carts__menu__element {
+  width: 200px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: 3px solid red;
+  position: relative;
+  z-index: 100;
+}
+.carts__menu__element__icon__and__text {
+  display: flex;
+  gap: 10px;
+}
+.carts__menu__element__icon__and__text:hover {
+  background-color: black;
+  color: red;
+  border: 3px solid red;
+  transition: all 0.7s ease;
+}
+.carts__menu__element__icon {
+  font-size: 40px;
+  margin-top: 12px;
+}
+.carts__menu__element__text {
+  font-size: 22px;
+}
+.carts__view__btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  margin: 5px;
+}
+.carts__view__btn:hover {
+  background-color: white;
+  color: green;
+  border: 3px solid green;
+  transition: all 0.9s ease;
+}
+.carts__edit__btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: yellow;
+  color: white;
+  margin: 5px;
+}
+.carts__edit__btn:hover {
+  background-color: white;
+  color: yellow;
+  border: 3px solid yellow;
+  transition: all 0.9s ease;
+}
+.carts__delete__btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  margin: 5px;
+}
+.carts__delete__btn:hover {
   background-color: white;
   color: red;
   border: 3px solid red;

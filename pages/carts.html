@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Carts HTML 5 (4th page) </title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="../css/normolize.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">  
+</head>
+<body>
+    
+    <header class="carts">
+        <div class="carts__container">
+            <div class="carts__panel">
+              <div class="carts__icon__and__title">
+                <i class="ri-account-circle-2-fill carts__icon"></i>
+                <h3 class="carts__title"> Admin Panel </h3>
+              </div> <!-- carts__icon__and__title -->
+
+              <div class="carts__image__and__texts">
+                <img class="carts__image" src="../images/ibrokhimov.jpg" alt="ibrokhimov_img">
+                <div class="carts__texts">
+                    <strong class="carts__user"> Sarvarbek Ibrokhimov </strong>
+                    <p class="carts__user__description"> Admin <span> (Online) </span> </p>
+                </div> <!-- carts__texts -->
+              </div> <!-- carts__image__and__texts -->
+
+              <div class="carts__sections">
+                <div class="carts__section">
+                  <i class="ri-home-4-line carts__section__icon"></i>
+                  <a href="../pages/dashboard.html"> <p class="carts__section__text"> Home </p> </a>       
+                </div> <!-- carts__section -->
+
+              <div class="carts__section">
+               <i class="ri-shopping-bag-4-line carts__section__icon"></i>
+               <a href="../pages/carts.html"> <p class="carts__section__text"> Carts </p> </a>  
+              </div> <!-- carts__section -->
+
+              <div class="carts__section">
+                <i class="ri-play-fill carts__section__icon"></i>
+                <a href=""> <p class="carts__section__text"> Media </p> </a> 
+              </div> <!-- carts__section -->
+
+              <div class="carts__section">
+                <i class="ri-group-line carts__section__icon"></i>
+                <a href=""> <p class="carts__section__text"> Users </p> </a> 
+              </div> <!-- carts__section -->
+
+              <div class="carts__section">
+                <i class="ri-todo-line carts__section__icon"></i>
+                <a href=""> <p class="carts__section__text"> Todo list </p> </a> 
+              </div> <!-- carts__section -->
+
+              <div class="carts__section">
+                <i class="ri-user-add-line carts__section__icon"></i>
+                <a href=""> <p class="carts__section__text"> Add user </p> </a> 
+              </div> <!-- carts__section -->
+
+              <div class="carts__exits">
+                <button class="carts__logout"> <i class="ri-logout-box-line"></i> Log out </button>
+                <button class="carts__signout"> <i class="ri-logout-box-line"></i> Sign out </button>
+              </div> <!-- carts__exits -->
+            </div> <!-- carts__sections -->
+          </div> <!-- carts__panel -->
+
+
+          <div class="modal__window hidden carts__window">
+            <form class="addForm carts__form">
+              <div class="inputs carts__inputs">
+                <input required class="input carts__input" type="text" placeholder="title" name="title">
+                <input required class="input carts__input" type="number" placeholder="price" name="price">
+                <input required class="input carts__input" type="text" placeholder="description" name="description">
+                <input required class="input carts__input" type="text" placeholder="category" name="category">
+                <input required class="input carts__input" type="url" placeholder="image" name="image">
+              </div> <!-- inputs -->
+
+              <div class="buttons carts__buttons">
+                <button class="cancel__btn carts__cancel__btn"> Cancel </button>
+                <button class="submit__btn carts__submit__btn"> Submit </button>
+              </div> <!-- buttons -->
+            </form>
+          </div> <!-- modal__window -->
+
+          <div class="modal__window__edit hidden carts__window__2">
+            <form class="editForm carts__form__2">
+              <div class="inputs__2 inputs carts__inputs__2">
+                <input required class="edit__input input carts__input__2" type="text" placeholder="title" name="title">
+                <input required class="edit__input input carts__input__2" type="number" placeholder="price" name="price">
+                <input required class="edit__input input carts__input__2" type="text" placeholder="description" name="description">
+                <input required class="edit__input input carts__input__2" type="text" placeholder="category" name="category">
+                <input required class="edit__input input carts__input__2" type="url" placeholder="image" name="image">
+              </div> <!-- inputs__2 -->
+
+              <div class="buttons__2 buttons carts__buttons__2">
+                <button class="cancel__btn__2 cancel__btn carts__cancel__btn__2"> Cancel </button>
+                <button class="submit__btn__2 submit__btn carts__submit__btn__2"> Submit </button>
+              </div> <!-- buttons -->
+            </form>
+          </div> <!-- modal__window__edit -->
+
+           
+
+       <div class="carts__navbar__and__content">
+          <nav class="carts__navbar">
+            <input class="carts__search" type="search" placeholder="search...">
+            <div class="carts__navbar__icons">
+               <i class="ri-menu-line carts__menu__icon"></i>
+               <div class="carts__menu__elements"></div>
+
+                <button class="add__Btn carts__add__btn"> Add + </button>
+
+               <i class="ri-github-fill carts__github__icon"></i> 
+            </div> <!-- carts__navbar__icons -->
+          </nav> <!-- carts__navbar -->
+
+          <div class="carts__content">
+           
+            <!-- <table>
+              <thead>
+                <tr>
+                  <th> T/R </th>
+                  <th> Title </th>
+                  <th> Category </th>
+                  <th> Description </th>
+                  <th> Price </th>
+                  <th> Image </th>
+                  <th> Action </th>
+                </tr>
+              </thead>
+              <tbody class="carts__table__body"></tbody>
+            </table> -->
+
+
+            <table>
+  <thead>
+    <tr>
+      <th>T/R</th>
+      <th>Cart ID</th>
+      <th>User ID</th>
+      <th>Products count</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody class="carts__table__body"></tbody>
+</table>
+
+
+
+          </div> <!-- carts__content -->
+        </div> <!-- carts__navbar__and__content -->
+      </div> <!-- carts__navbar__icons -->
+    </nav> <!-- carts__navbar -->
+  </div> <!-- carts__container -->
+</header>
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../utils/carts.js"></script>
+
+</body>
+</html>
