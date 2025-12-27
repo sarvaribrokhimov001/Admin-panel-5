@@ -159,7 +159,7 @@ function showData(data) {
     tableBody.innerHTML += `
       <tr>
         <td>${index + 1}</td>
-        <td>${cart.id}</td>
+        <!--  <td>${cart.id}</td> -->
         <td>${cart.userId}</td>
         <td>${cart.products.length}</td>
         <td>
